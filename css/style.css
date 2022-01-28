@@ -1,0 +1,139 @@
+body,
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/concert.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-inner {
+    background-color: #ffffffa4;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text p {
+    padding: 0px 20px;
+}
+
+.fa-chair,
+.fa-user,
+.fa-map-marker-alt {
+    color: green;
+}
+
+.btn-book {
+    margin-top: 5%;
+}
+
+.btn-load {
+    width: 10%;
+    margin: 2% 45%;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-body,
+.card-img-top {
+    border: 1px solid black;
+}
+
+.date {
+    font-style: normal;
+    color: green;
+}
+
+.stage {
+    margin: 2% 0;
+}
+
+.copyright {
+    height: 5vh;
+    text-align: center;
+    color: white;
+    background-color: #1f1f1f;
+    padding-top: 1vh;
+}
+
+.contact {
+    display: flex;
+}
+
+.dj,
+.contactform {
+    width: 45%;
+    margin: 0 5%;
+}
+
+.intouch {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #d8d8d8;
+}
+
+@media (max-width: 768px) {
+    /* I didnt get the cards repsonisve for tablets */
+    .contact {
+        display: block;
+    }
+    .dj,
+    .contactform {
+        width: 100%;
+        margin: 0 5%;
+    }
+    .intouch {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .btn-load {
+        width: 20%;
+        margin: 2% 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .dj {
+        display: none;
+    }
+    .btn-load {
+        width: 30%;
+        margin: 2% 40%;
+    }
+}
