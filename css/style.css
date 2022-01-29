@@ -6,7 +6,16 @@ html {
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-compact-disc {
+    color: green;
+}
+
+.fa-compact-disc:hover {
+    transform: scale(1.5);
+    transition: ease-in 0.5s;
 }
 
 .hero {
@@ -21,6 +30,10 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+hr {
+    background-color: green;
 }
 
 .hero-inner {
@@ -67,7 +80,7 @@ main {
 
 .card-body,
 .card-img-top {
-    border: 1px solid black;
+    border: 1px solid green;
 }
 
 .date {
@@ -107,6 +120,20 @@ footer {
     background-color: #d8d8d8;
 }
 
+
+/* review stars */
+
+.fa-star {
+    color: green;
+}
+
+.fa-star:hover {
+    color: darkgreen;
+}
+
+
+/* responisve tablets */
+
 @media (max-width: 768px) {
     /* I didnt get the cards repsonisve for tablets */
     .contact {
@@ -127,6 +154,48 @@ footer {
         margin: 2% 40%;
     }
 }
+
+@media (min-width: 768px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .card-group>.card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+    }
+    .card-group>.card+.card {
+        margin-left: 0;
+        border-left: 0;
+    }
+    .card-group>.card:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .card-group>.card:not(:last-child) .card-img-top,
+    .card-group>.card:not(:last-child) .card-header {
+        border-top-right-radius: 0;
+    }
+    .card-group>.card:not(:last-child) .card-img-bottom,
+    .card-group>.card:not(:last-child) .card-footer {
+        border-bottom-right-radius: 0;
+    }
+    .card-group>.card:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .card-group>.card:not(:first-child) .card-img-top,
+    .card-group>.card:not(:first-child) .card-header {
+        border-top-left-radius: 0;
+    }
+    .card-group>.card:not(:first-child) .card-img-bottom,
+    .card-group>.card:not(:first-child) .card-footer {
+        border-bottom-left-radius: 0;
+    }
+}
+
+
+/* responsive small screens  */
 
 @media (max-width: 576px) {
     .dj {
